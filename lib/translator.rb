@@ -2,7 +2,7 @@
 
 def load_library(file_path)
   hash = {
-    'get_meaning' => {},
+    'get_meaning' => {YAML.load_file(file_path)},
     'get_emoticon' => {}
   }
 end
